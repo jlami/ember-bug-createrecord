@@ -1,0 +1,18 @@
+{{!--
+<ul>
+{{#each model as |p|}}
+<li>
+--}}
+{{p.name}} {{filtered.length}} <button {{action 'saveAll'}}>save</button><button {{action 'addTag' model}}>Add Tag</button><button {{action 'addTag2' model}}>Add Tag</button>
+<ul>
+{{#each filtered as |t|}}
+<li>
+{{t.name}} {{!t.isDeleted}} {{t.id}}<button {{action 'save' t}}>Save</button><button {{action 'delete' t}}>Delete</button><button {{action 'log' t}}>Log</button>
+</li>
+{{/each}}
+</ul>
+{{!--
+</li>
+{{/each}}
+</ul>
+--}}
